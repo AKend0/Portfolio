@@ -1,0 +1,41 @@
+:root {
+    --noto_sans:'Noto Sans KR', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+ol, ul,li {
+    list-style: none;
+    padding: 0px;
+}
+p{
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: var(--noto_sans);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+.header_container{
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.header_img{
+    width: 3vw;
+}
+.menu_list{
+    display:flex;
+    gap: 2rem;
+}
