@@ -25,6 +25,8 @@ body{
     line-height: 1;
 }
 .header_container{
+    position: fixed;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,6 +39,9 @@ body{
 .menu_list{
     display:flex;
     gap: 2rem;
+}
+.espacio{
+    padding: 2.5rem;
 }
 .descripcion{
     display: flex;
@@ -81,6 +86,7 @@ body{
 .pfp_img{
     border-radius: 50%;
     width: 20vw;
+    min-width: 15rem;
 }
 .about{
     display: flex;
@@ -131,7 +137,7 @@ body{
     align-items: center;
     justify-content:center;
     border-radius: 2rem;
-    min-width:200px;
+    min-width:300px;
 }
 .habilidades_box_container{
     display: flex;
@@ -147,9 +153,7 @@ body{
     font-size: 1.5rem;
 }
 .hobbies{
-
     padding: 5rem 15vw;
-
 }
 .hobbies_container{
     display: flex;
@@ -158,7 +162,7 @@ body{
 }
 .hobbies_line{
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -170,13 +174,14 @@ body{
     border-radius: 2rem;
     justify-content: center;
     align-items: center;
-    min-width:200px;
+    min-width:300px;
 }
 .img_Ho{
     height: 5vw;
+    min-height: 5rem;
 }
 .educacion{
-    padding: 5rem 15rem;
+    padding: 5rem 2rem;
 }
 .educacion_container{
     display: flex;
@@ -190,8 +195,9 @@ body{
 }
 .educacion_line{
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
-    justify-content:space-around;
+    justify-content:center;
 }
 .educacion_box{
     display: flex;
@@ -200,15 +206,17 @@ body{
 }
 .box_container{
     background-color: white;
-    width: 21.5vw;
-    height: 15rem;
+    width: 20vw;
+    height: 12rem;
+    min-width:300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 3rem;
+    border-radius: 2rem;
 }
 .educacion_img{
     width: 10vw;
+    min-width: 5rem;
 }
 .box_info{
     display: flex;
@@ -353,7 +361,74 @@ body{
     outline: none;
   }
   .main_footer{
-    padding: 2rem 15rem;
+    padding: 2rem 2rem;
     text-align: center;
   }
   
+/*tablet*/
+@media screen and (max-width: 768px) { 
+/*header*/
+.header_container {
+    background-color: #2A7AE4;
+}
+.menu_list{
+    display: none;
+}
+.header_img{
+    min-width: 3rem;
+}
+/*description*/
+.descripcion_links {
+    justify-content: space-around;
+}
+.descripcion_nombres{
+    font-size: 3rem;
+}
+/*about*/
+
+.about{
+    justify-content: flex-start;
+}
+.about_container{
+    width: auto;
+}
+/*habilidades*/
+.habilidades{
+    padding: 5rem 2rem;
+}
+.box_container{
+    width: 13rem;
+    height: 10rem;
+}
+/*education*/
+.educacion{
+    padding: 5rem 2rem;
+}
+.box_info{
+    width: 30vw;
+}
+/*proyectos*/
+.proyectos{
+    padding: 5rem 2rem;
+}
+.proyectos_box{
+    flex-direction:column;
+}
+.boton_container{
+    flex-direction: row;
+}
+}
+/*mobile*/
+@media screen and (max-width: 480px) {
+/*description*/
+.descripcion{
+    flex-direction: column-reverse;
+}
+.descripcion_texto{
+    width: auto;
+}
+/*education*/
+.box_info{
+    width: 60vw;
+}
+}
