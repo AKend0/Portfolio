@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
@@ -18,11 +19,12 @@
 
         <nav>
             <ul class="menu_list">
-                <li class="menu_list_item"><a href="#">Sobre mi</a></li>
-                <li class="menu_list_item"><a href="#">Skills</a></li>
-                <li class="menu_list_item"><a href="#">Formacion</a></li>
-                <li class="menu_list_item"><a href="#">Proyectos</a></li>
-                <li class="menu_list_item"><a href="#">Contacto</a></li>
+                <li class="menu_list_item"><a href="#sobre_mi" class="item_text">Sobre mi</a></li>
+                <li class="menu_list_item"><a href="#skills" class="item_text">Skills</a></li>
+                <li class="menu_list_item"><a href="#hobbies" class="item_text">Hobbies</a></li>
+                <li class="menu_list_item"><a href="#educacion" class="item_text">Formacion</a></li>
+                <li class="menu_list_item"><a href="#proyectos" class="item_text">Proyectos</a></li>
+                <li class="menu_list_item"><a href="#contacto" class="item_text">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -47,10 +49,10 @@
                 <img src="material/pfp" alt="profile_photo" class="pfp_img">
             </div>
         </section>
-        <section class="about">
-            <div class="about_container">
+        <section class="about" id="sobre_mi">
+            <div class="about_container" >
                 <h2 class="about_title">Sobre mi</h2>
-                <p class="about_parrafo">
+                <p class="about_parrafo" >
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore placeat a quas laborum consequatur corporis hic optio voluptates perferendis facilis quaerat dicta voluptatum blanditiis, obcaecati esse debitis assumenda nulla laudantium!
                 </p>
                 <p class="about_parrafo">
@@ -59,43 +61,43 @@
             </div>
 
         </section>
-        <section class="habilidades">
-            <div class="habilidades_container">
+        <section class="habilidades" id="skills">
+            <div class="habilidades_container" >
                 <h2 class="habilidades_title">Habilidades</h2>
                     <div class="habilidades__line">
                         <div class="habilidades__box">
                             <ul class="habilidades_box_container">
-                                <li class="habilidades__img"><img src="material/icono-skills-html5.svg" class="img_H" alt="HTML_5"></li>
+                                <li class="habilidades__img"><img src="material/html.png" class="img_H" alt="HTML_5"></li>
                                 <li class="img_desc">HTML</li>
                             </ul>
                         </div>
                         <div class="habilidades__box">
                             <ul class="habilidades_box_container">
-                                <li class="habilidades__img"><img src="material/icono-skills-css3.svg" class="img_H" alt="CSS_3""></li> 
+                                <li class="habilidades__img"><img src="material/4202020css3htmllogosocialsocialmedia-115668_115633.png" class="img_H" alt="CSS_3""></li> 
                                 <li class="img_desc">CSS</li>   
                             </ul>
                         </div>
                         <div class="habilidades__box">
                             <ul class="habilidades_box_container">
-                                <li class="habilidades__img"><img src="material/icono-skills-js.svg" class="img_H" alt="Javascript"></li>
+                                <li class="habilidades__img"><img src="material/js.png" class="img_H" alt="Javascript"></li>
                                 <li class="img_desc">Javascript</li>
                             </ul>
                         </div>
                         <div class="habilidades__box">
                             <ul class="habilidades_box_container">
-                                <li class="habilidades__img"><img src="material/react-logo-programming-svgrepo-com.svg" class="img_H" alt="React"></li>
+                                <li class="habilidades__img"><img src="material/react.png" class="img_H" alt="React"></li>
                                 <li class="img_desc">React</li>
                             </ul>
                         </div>
                         <div class="habilidades__box">
                             <ul class="habilidades_box_container">
-                                <li class="habilidades__img"><img src="material/Python_icon_(black_and_white).svg" class="img_H" alt="Python"></li>
+                                <li class="habilidades__img"><img src="material/python.png" class="img_H" alt="Python"></li>
                                 <li class="img_desc">Pyton</li>
                             </ul>
                         </div>
                         <div class="habilidades__box">
                             <ul class="habilidades_box_container">
-                                <li class="habilidades__img"><img src="material/icono-skills-gitalt.svg" class="img_H" alt="Git"></li>
+                                <li class="habilidades__img"><img src="material/git.png" class="img_H" alt="Git"></li>
                                 <li class="img_desc">Git</li>
                             </ul>
                         </div>
@@ -114,8 +116,8 @@
                  </div>    
              </div>     
         </section>
-        <section class="hobbies">
-            <div class="hobbies_container">
+        <section class="hobbies" id="hobbies">
+            <div class="hobbies_container" >
                 <h2 class="hobbies_title habilidades_title">Pasatiempos</h2>
                 <div class="hobbies_line">
                     <div class="hobbies_box">
@@ -132,7 +134,7 @@
                     </div>
                     <div class="hobbies_box">
                         <ul class="habilidades_box_container">
-                            <li class="hobbies_img"><img src="material/logo.png" alt="Programar" class="img_Ho"></li>
+                            <li class="hobbies_img"><img src="material/coding.png" alt="Programar" class="img_Ho"></li>
                             <li class="img_desc">Programacion</li>
                         </ul>
                     </div>
@@ -145,8 +147,8 @@
                 </div>
             </div>  
         </section>
-        <section class="educacion">
-            <div class="educacion_container">
+        <section class="educacion" id="educacion">
+            <div class="educacion_container" >
                 <h2 class="educacion_title"> Educacion</h2>
                 <div class="educacion_line">
                 <div class="educacion_box">
@@ -179,7 +181,7 @@
             </div>
         </div>
         </section>
-        <secttion class="proyectos">
+        <secttion class="proyectos" id="proyectos">
             <div class="proyectos_container">
                 <h2 class="educacion_title">Proyectos</h2>
                 <div class="proyectos_line">
@@ -249,7 +251,7 @@
                 </div>
             </div>
         </secttion>
-        <section class="contacto">
+        <section class="contacto"  id="contacto">
             <div  class="formcontato__contacto">
                 <div class="formcontato__text">
                     <h2 class="formcontato__title">Contacto</h2>
@@ -259,7 +261,7 @@
                         <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
                         <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
                         <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+                        <textarea class="formcontato__textarea textarea rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
                         <button type="submit" class="formcontato__botao">Enviar mensaje</button>
                     </form>
                 </div>
